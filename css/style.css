@@ -1,0 +1,12 @@
+body, form, input, button {
+  font-size: 24px;
+}
+
+.toggle {
+	color: gray;
+	text-decoration: line-through;
+}
+
+#todos li {
+	cursor: pointer;
+}

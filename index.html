@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple TaskList</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<form>
+  <input id="new" />
+  <button id="add">Add to List</button>
+</form>
+
+<ul id="todos"></ul>
+
+<p>You have <span id="count">0</span> todos left.</p>
+
+<button id="clear">Clear List</button>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+
+  <script src="js/index.js"></script>
+
+
+  <script>
+  $(function() {
+    $( "#todos" ).sortable();
+    $( "#todos" ).disableSelection();
+  });
+  </script>
+
+</body>
+
+</html>
